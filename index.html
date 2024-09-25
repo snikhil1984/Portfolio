@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29480e304c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span><br> Nikhil srivastava</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Nikhil Srivastava, currently in my 3rd year at Inspiria Knowledge Campus pursuing BCA. Passionate about UI/UX design and frontend development, I specialize in creating engaging digital experiences. With a focus on user-centered design, I strive to craft interfaces that are both aesthetically pleasing and highly functional. Let's collaborate to bring your ideas to life!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Financial Accounting</span><br>Completed a six-month course in Financial Accounting, specializing in Tally with GST and Microsoft Office.</li> 
+                    </ul>
+                </div>
+                <!--
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div> -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2025</span><br>Currently pursuing Bachelor of Computer Applications (BCA) <br> Inspiria Knowledge Campus.</li>
+                        <li><span>2022</span><br>All India Senior School Certificate Examination (AISSCE) <br> Modella Caretaker Centre And School.</li>
+                        <li><span>2020</span><br> All India Secondary School Examination (AISSE) <br> Modella Caretaker Centre And School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Discover the art of web design, where aesthetics and usability converge to create stunning online experiences. Our team specializes in crafting visually appealing, responsive, and user-friendly websites that cater to your business needs and captivate your audience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Enhance user experience with our expert UI/UX design services. Our team focuses on creating intuitive and engaging interfaces that not only look great but also provide seamless navigation and functionality.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-receipt"></i>
+                <h2>Financial Accounting</h2>
+                <p>Master the complexities of financial accounting with our comprehensive services. We provide accurate and insightful financial reporting, ensuring your business stays compliant and informed for strategic decision-making.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> srivastavanikhil468@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9907088535</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100041359191643&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/Nikhils76845132?t=dZjCGM0ZFfi5DruXT4t-wQ&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/_nikhilsrivastava?igsh=MWgxcnFja2x2MGtleA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nikhil-srivastava-ba814626b"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nikhil srivastava.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCUKOSXQrtps1lD7dDr9N8dbML5CiJUO2XbUJBKEGhmewYrS_0uU2oYUC_zy8mVZESuw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
